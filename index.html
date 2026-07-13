@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trusted Finance — Outsourcing & Investment Facilitation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --primary: #003366;
+      --accent: #f5a623;
+      --bg: #f4f6f9;
+      --card-bg: #ffffff;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: var(--bg);
+      color: #222;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #00264d;
+      padding: 0.8rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .logo {
+      width: 120px;
+      height: 120px;
+      background: #fff;
+      border-radius: 50%;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: var(--primary);
+      font-size: 1.2rem;
+    }
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    h2 {
+      color: var(--primary);
+    }
+    .testimonial {
+      background: #f9fbff;
+      padding: 1rem;
+      border-left: 4px solid var(--accent);
+      margin-bottom: 1rem;
+      border-radius: 6px;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">TF</div>
+    <h1>Trusted Finance</h1>
+    <p>Outsourcing & Third‑Party Analyst Agency Connecting Individuals and Companies with Investors</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="apply.html">Apply</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Welcome to Trusted Finance</h2>
+      <p>
+        We connect qualified entrepreneurs, SMEs, and growing businesses with reputable investors 
+        for business loans, project financing, and expansion capital.
+      </p>
+    </section>
+
+    <section>
+      <h2>Client Testimonials</h2>
+
+      <div class="testimonial">
+        <strong>Sarah M. — Bakery Owner</strong>
+        <p>“Trusted Finance helped me secure funding to expand my home bakery into a full production space. The process was smooth and professional.”</p>
+      </div>
+
+      <div class="testimonial">
+        <strong>Daniel K. — Logistics Startup</strong>
+        <p>“Their investor introduction was exactly what my business needed. Highly recommended for SMEs seeking real growth.”</p>
+      </div>
+
+      <div class="testimonial">
+        <strong>Maria L. — Fashion Retailer</strong>
+        <p>“Clear communication, structured guidance, and fast results. Trusted Finance exceeded my expectations.”</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Start Your Funding Journey</h2>
+      <p>Ready to explore financing options? Begin by submitting a funding application.</p>
+      <a href="apply.html" style="color: var(--accent); font-weight: bold;">Apply Now</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Trusted Finance
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Live Chat Widget -->
+  <script>
+    (function() {
+      var chat = document.createElement("div");
+      chat.style.position = "fixed";
+      chat.style.bottom = "20px";
+      chat.style.right = "20px";
+      chat.style.background = "#003366";
+      chat.style.color = "#fff";
+      chat.style.padding = "12px 18px";
+      chat.style.borderRadius = "8px";
+      chat.style.cursor = "pointer";
+      chat.innerHTML = "💬 Chat with Support";
+      chat.onclick = function() {
+        alert("Live chat coming soon!");
+      };
+      document.body.appendChild(chat);
+    })();
+  </script>
+
+</body>
+</html>
