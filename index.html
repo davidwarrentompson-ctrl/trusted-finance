@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>FAQ — Trusted Finance</title>
+  <title>Contact — Trusted Finance</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root {
       --primary: #003366;
+      --accent: #f5a623;
       --bg: #f4f6f9;
       --card-bg: #ffffff;
     }
@@ -34,33 +35,46 @@
       font-weight: 600;
     }
     main {
-      max-width: 900px;
+      max-width: 700px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
     section {
       background: var(--card-bg);
       padding: 1.5rem;
-      margin-bottom: 2rem;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
-    h2 {
-      color: var(--primary);
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 600;
     }
-    .faq-item {
-      margin-bottom: 1rem;
+    input, textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.4rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
     }
-    .faq-item h3 {
-      margin: 0;
-      color: var(--primary);
+    button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.4rem;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Frequently Asked Questions</h1>
+    <h1>Contact Trusted Finance</h1>
   </header>
 
   <nav>
@@ -73,28 +87,20 @@
 
   <main>
     <section>
-      <h2>General Questions</h2>
+      <h2>Send Us a Message</h2>
 
-      <div class="faq-item">
-        <h3>What types of businesses qualify?</h3>
-        <p>We work with active, verifiable businesses including SMEs, home‑based businesses, and registered companies.</p>
-      </div>
+      <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+        <label>Your Name</label>
+        <input type="text" name="Name" required />
 
-      <div class="faq-item">
-        <h3>What funding amounts are available?</h3>
-        <p>Typical funding ranges from small expansion capital to structured project financing.</p>
-      </div>
+        <label>Your Email</label>
+        <input type="email" name="Email" required />
 
-      <div class="faq-item">
-        <h3>Do you charge upfront fees?</h3>
-        <p>No upfront fees are required for preliminary review or investor introduction.</p>
-      </div>
+        <label>Your Message</label>
+        <textarea name="Message" rows="5" required></textarea>
 
-      <div class="faq-item">
-        <h3>How long does the process take?</h3>
-        <p>Preliminary review typically takes 24–72 hours depending on the complexity of the business.</p>
-      </div>
-
+        <button type="submit">Send Message</button>
+      </form>
     </section>
   </main>
 
